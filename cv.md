@@ -1,5 +1,5 @@
 # Ilxomov Ismoilbek
-### Junior Front-End Developer
+### Front-End Developer
 
 ---
 
