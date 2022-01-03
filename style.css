@@ -25,6 +25,7 @@ html {
 /* header */
 
 header {
+    right: -20px;
     width: 100%;
     display: flex;
     top: 0;
@@ -120,6 +121,7 @@ a.nav-link:hover::before {
 }
 
 .myPhoto {
+    box-shadow: 0px 0px 6px black;
     width: 300px;
     margin: 20px;
     border-radius: 50%;
@@ -169,6 +171,7 @@ a.nav-link:hover::before {
     text-align: center;
     font-size: 36px;
     margin: 20px;
+    margin-bottom: 0;
     font-family: monospace;
     justify-content: center;
     align-items: center;
@@ -178,7 +181,21 @@ a.nav-link:hover::before {
 .years {
     text-align: right;
     font-size: 20px;
-    margin-right: 30px;
+    margin: 10px 30px 10px 0;
+    top: 0;
+}
+
+.imgWork {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 6px black;
+    ;
+}
+
+.imgWorkDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -263,16 +280,372 @@ a.nav-link:hover::before {
     border-radius: 3%;
 }
 
+.projectsMiniTitle {
+    font-size: 20px;
+}
 
-/* footer */
 
-footer {
-    width: 100%;
+/* Education and Languages */
+
+
+/* education */
+
+.educationDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.educationContainer1 {
+    height: 400px;
+    width: 600px;
+    background-image: url(assets/img/inha2.jpg);
+    box-shadow: 0px 0px 6px black;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 3%;
+    padding: 5px;
+    background-size: cover;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.educationContainer2 {
+    height: 400px;
+    width: 600px;
+    background-image: url(assets/img/ictschool2.jpg);
+    box-shadow: 0px 0px 6px black;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 3%;
+    padding: 5px;
+    background-size: cover;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.educationContainer1:hover {
+    box-shadow: 1px 1px #53ea93, 2px 2px #53ea93, 3px 3px #53ea93, 4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+.educationContainer2:hover {
+    box-shadow: 1px 1px #53ea93, 2px 2px #53ea93, 3px 3px #53ea93, 4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+.education-text {
+    margin: 40px;
+}
+
+
+/* languages */
+
+.language-div {
+    margin: 0 auto;
+    width: 1200px;
     display: flex;
     position: relative;
     justify-content: space-around;
     align-items: center;
-    bottom: 0;
+    flex-direction: row;
+}
+
+.language {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-lang {
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 3%;
+    font-size: 25px;
+}
+
+.flip-card-lang:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.back-side {
+    transform: rotateX(180deg);
+}
+
+
+/* code skills */
+
+video {
+    width: 400px;
+    border: 2px solid black;
+}
+
+.codeExample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeElement {
+    margin: 20px;
+}
+
+.codeText {
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0px 0px 6px black;
+    background: rgb(26, 26, 26);
+    color: rgb(218, 218, 218);
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.darkblue {
+    color: rgb(92, 92, 255);
+}
+
+.lightblue {
+    color: rgb(45, 203, 255);
+}
+
+.yellow {
+    color: darkkhaki;
+}
+
+.purple {
+    color: rgb(189, 124, 255)
+}
+
+.codeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.u-center {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.skills {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    margin: 1em 0;
+    position: relative;
+    width: 500px;
+}
+
+.skill__type {
+    font-family: monospace;
+    color: rgb(119, 119, 119);
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+}
+
+.skill__outer-bar,
+.skill__inner-bar {
+    height: 0.75em;
+}
+
+.skill__outer-bar {
+    background: #333;
+}
+
+.skill__inner-bar {
+    -webkit-animation: fillBar 1s forwards;
+    animation: fillBar 1s forwards;
+    background: rgb(146, 146, 146);
+    left: 5em;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill__inner-bar--95 {
+    width: 95%;
+}
+
+.skill__inner-bar--85 {
+    width: 85%;
+}
+
+.skill__inner-bar--80 {
+    width: 80%;
+}
+
+.skill__inner-bar--75 {
+    width: 75%;
+}
+
+.skill__inner-bar--20 {
+    width: 20%;
+}
+
+@-webkit-keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skillsElement {
+    margin: 30px;
+}
+
+
+/* contact me */
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.link-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.social-links a {
+    transition: transform 0.6s ease;
+    border: 3px solid;
+    border-radius: 50%;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+}
+
+.social-links a:hover {
+    transform: rotate(360deg) scale(1.4);
+}
+
+.social-links a>img {
+    font-size: 35.2941176471px;
+    line-height: 60px;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.social-links .instagram {
+    border-color: #941f7b;
+    color: #3b5998;
+}
+
+.social-links .telegram {
+    border-color: #00aced;
+    color: #00aced;
+}
+
+.social-links .linkedin {
+    border-color: #007bb6;
+    color: #007bb6;
+}
+
+.social-links .discord {
+    border-color: #6355b1;
+    color: #517fa4;
+}
+
+.social-links .telephone {
+    border-color: cornflowerblue;
+    color: #ef8236;
+}
+
+img.telephone {
+    width: 30px;
+}
+
+.social-links .mail {
+    border-color: rgb(237, 100, 100);
+    color: #ef8236;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .iconGithub {
@@ -281,6 +654,10 @@ footer {
 
 .iconRS {
     height: 50px;
+}
+
+.footerIcon {
+    width: 100px
 }
 
 
