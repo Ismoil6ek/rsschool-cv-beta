@@ -6,7 +6,14 @@ body {
 
 * {
     font-family: monospace;
-    overflow-x: hidden;
+}
+
+.navbar-links {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
 }
 
 
@@ -27,11 +34,12 @@ body {
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 .Container {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .ContainerTitle {
@@ -70,9 +78,10 @@ header {
     align-items: center;
     background: rgb(24, 24, 24);
     align-self: center;
+    height: 50px;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +190,8 @@ a.nav-link:hover::before {
     justify-content: center;
     align-items: flex-start;
     margin: 20px;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .workExperience1 .workExperience2 {
