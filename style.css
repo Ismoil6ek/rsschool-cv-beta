@@ -8,6 +8,23 @@ body {
     font-family: monospace;
 }
 
+
+/* hide scrollbar  for chrome*/
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,6 +36,22 @@ html {
 .ContainerTitle {
     font-size: 32px;
     margin-top: 70px;
+}
+
+
+/* hover animation   */
+
+.hover-animation {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.hover-animation:hover {
+    box-shadow: 1px 1px #007bb6, 2px 2px #007bb6, 3px 3px #007bb6, 4px 4px #007bb6, 5px 5px #007bb6, 6px 6px #007bb6, 7px 7px #007bb6;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
 }
 
 
@@ -324,10 +357,6 @@ a.nav-link:hover::before {
     padding: 5px;
     background-size: cover;
     opacity: 0.7;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
 
 .educationContainer2 {
@@ -341,22 +370,6 @@ a.nav-link:hover::before {
     padding: 5px;
     background-size: cover;
     opacity: 0.7;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.educationContainer1:hover {
-    box-shadow: 1px 1px #53ea93, 2px 2px #53ea93, 3px 3px #53ea93, 4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
-    -webkit-transform: translateX(-7px);
-    transform: translateX(-7px);
-}
-
-.educationContainer2:hover {
-    box-shadow: 1px 1px #53ea93, 2px 2px #53ea93, 3px 3px #53ea93, 4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
-    -webkit-transform: translateX(-7px);
-    transform: translateX(-7px);
 }
 
 .education-text {
@@ -399,6 +412,8 @@ a.nav-link:hover::before {
 
 .back-side {
     transform: rotateX(180deg);
+    background-color: #007bb6;
+    color: #ffffff;
 }
 
 
@@ -406,7 +421,8 @@ a.nav-link:hover::before {
 
 video {
     width: 400px;
-    border: 2px solid black;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 6px black;
 }
 
 .codeExample {
@@ -650,29 +666,29 @@ footer {
 
 .iconGithub {
     width: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.iconGithub:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
 }
 
 .iconRS {
     height: 50px;
 }
 
-.footerIcon {
-    width: 100px
+.iconRS {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-
-/* hide scrollbar  for chrome*/
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
-* {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+.iconRS:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
 }
