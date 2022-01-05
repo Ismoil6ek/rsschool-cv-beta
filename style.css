@@ -646,6 +646,11 @@ video {
     color: #00aced;
 }
 
+.social-links .discord {
+    border-color: #0072a7;
+    color: #007bb6;
+}
+
 .social-links .linkedin {
     border-color: #007bb6;
     color: #007bb6;
@@ -686,6 +691,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.footerIcon {
+    width: 100px;
 }
 
 .footer {
