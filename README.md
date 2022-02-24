@@ -1,2 +1,2 @@
-# https://ismoil6ek.github.io/rsschool-cv/cv
-# https://ismoil6ek.github.io/rsschool-cv/
+# CV web format https://ismoil6ek.github.io/rsschool-cv-beta/cv
+# CV Readme formar https://ismoil6ek.github.io/rsschool-cv-beta/
